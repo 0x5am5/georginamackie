@@ -1,0 +1,253 @@
+@charset "UTF-8";
+body {
+	margin: 0;
+	padding: 0;
+	color: #666;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.4;
+	background-color: #CCC;
+}
+
+* {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+ul, ol, dl {
+	padding: 0;
+	margin: 0;
+}
+h1, h3, h4, h5, h6 {
+	margin: 0
+}
+
+h2 {
+	margin: 0 0 20px 0;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+a img { 
+	border: none;
+}
+
+blockquote {
+	font-style:italic;
+}
+
+a:link {
+	color: #666;
+	text-decoration: underline;
+}
+a:visited {
+	color: #666;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+
+.access {
+	position: absolute;
+	left: -999px;
+}
+
+.container {
+	max-width: 920px; 
+	margin: 0 auto;
+}
+
+.header {
+	background-color: #F9C;
+	text-align:center;
+	padding:10px;
+	height:120px;
+	background-image:url(../images/main_logo.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	text-align:right;
+	vertical-align:bottom;
+}
+
+.content {
+	background: -webkit-linear-gradient(top, #000000, #FFFFFF);
+	background: -moz-linear-gradient(top, #CCC, #000);
+	background:#FFF;
+	padding-bottom:50px;
+}
+
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px;
+}
+
+.footer {
+	padding: 10px;
+	background-color: #F9C;
+	border-bottom-left-radius:15px;
+	border-bottom-right-radius:15px;
+	font-size:12px;
+	line-height:2px;
+	min-height:100px;
+}
+
+.fltrt {
+	float: right;
+	margin-left: 8px;
+}
+.fltlft {
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat {
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+.menu {
+	background:#666;
+	-moz-box-shadow: 0 0 0px 7px #CCC;
+	-webkit-box-shadow: 0 0 0px 5px #CCC;
+	box-shadow: 0 3px 3px 0px #333;
+	overflow: hidden;
+	zoom:1;
+}
+
+.menu li {
+        float:left;
+	display: inline-block;
+        width:25%;
+}
+
+.menu a:link {
+	text-align:center;
+        display:block;
+	padding:5px;
+	height:30px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.menu a:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.menu a:hover, 
+.menu a:focus {
+	background:#999;
+}
+
+.menu a:last-child {
+	border-right: none;
+}
+
+.menu .active {
+	background:#999;
+	cursor: text;
+}
+
+.about {
+	font-size:14px;
+	padding:5px 20px;
+}
+
+.banner {
+	max-width:736px;
+	margin: 0 auto;
+	margin-bottom:20px;
+}
+
+.banner img {
+	border: 1px solid #333;
+	width: 100%;
+	height: auto;
+}
+
+.rec
+{
+	text-align:right;
+	background-color:#F9C;
+	width:100%;
+	height:56px;
+}
+
+.logo {
+	width:250px;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+.contact-box {
+	background-color:#CCC; 
+	padding:10px; 
+	border:#999 solid thin; 
+	border-radius:5px; 
+	color:#000;
+}
+
+.contact-box h2 {
+	margin: 0;
+}
+
+.footer {
+	color: #FFF;
+	line-height:1;
+}
+
+.contact {
+	margin-bottom: 10px;
+	line-height: 1;
+}
+.contact p,
+.webdesign p {
+	margin-bottom: 5px;
+}
+
+/*.contact p,
+.webdesign p {
+	float: left;
+}
+.contact a,
+.webdesign a {
+	float: right;
+}*/
+
+/*Tablet / Desktop*/
+@media only screen and (min-width: 767px) {
+	.about {
+		padding: 5px 50px;
+	}
+
+	.contact {
+		float: left;
+		display: inline-block;
+		width: 50%;
+		line-height:1;
+		margin: 0;
+	}
+	/*.contact p,
+	.contact a,
+	.webdesign p,
+	.webdesign a {
+		float: none;
+	}*/
+
+	.webdesign {
+		width: 50%;
+		font-size:10px;
+		text-align:right;	
+		display: inline-block;
+	}
+}
+
+/*Desktop*/
+/*@media only screen and (min-width: 1140px) {
+
+}*/
